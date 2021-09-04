@@ -31,7 +31,8 @@ const routes = [
   {
     path: "/:pathMatch(.*)*",
     name: "404",
-    component: () => import(/* webpackChunkName: "404notfound" */ "../views/404.vue"),
+    component: () =>
+      import(/* webpackChunkName: "404notfound" */ "../views/404.vue"),
     meta: {
       hideNavbar: true,
       hideFooter: true,
