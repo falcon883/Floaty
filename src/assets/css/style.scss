@@ -1,0 +1,177 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: $logo-clr-1 #212121;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $logo-clr-1;
+  border-radius: 20px;
+  border: 3px solid $logo-clr-1;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.is-also-dark {
+  background-color: #363636 !important;
+  color: #fff !important;
+}
+
+.is-text-white {
+  color: #fff !important;
+}
+
+.is-too-dark {
+  background-color: #171717 !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.open {
+  display: block !important;
+  -webkit-animation: fadeIn .3s;
+  animation: fadeIn .3s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.input-container {
+  .hero-body {
+    width: 100% !important;
+  }
+
+  form {
+    width: 50% !important;
+
+    @include mq-max-width(sm) {
+      width: 100% !important;
+    }
+  }
+
+  .control .icon {
+    z-index: 99;
+  }
+
+  .input {
+    border-color: $logo-clr-1 !important;
+    font-family: inherit;
+  }
+
+  .input::placeholder {
+    font-family: inherit;
+  }
+
+  .button {
+    background-color: $logo-clr-1 !important;
+    font-family: inherit;
+  }
+
+  .control:first-child {
+    width: 100% !important;
+  }
+}
+
+.skin-container {
+  .card {
+    padding: .5em;
+
+    .range-wrapper {
+      width: 100%;
+
+      .marker-track {
+        padding-right: 24px;
+      }
+
+      .marker {
+        height: 24px;
+        margin-left: 0;
+      }
+    }
+
+    .range {
+      display: flex;
+      width: 100%;
+      height: .5rem;
+      padding: 0 8px;
+
+      .range-1 {
+        width: 7%;
+        background: #55b94d;
+        border-radius: 50px 0 0 50px;
+      }
+
+      .range-2 {
+        width: 8%;
+        background: #a8c449;
+      }
+
+      .range-3 {
+        width: 23%;
+        background: #ffc94b;
+      }
+
+      .range-4 {
+        width: 7%;
+        background: #f68843;
+      }
+
+      .range-5 {
+        width: 55%;
+        background: #fe5c5a;
+        border-radius: 0 50px 50px 0;
+      }
+    }
+
+    @include mq-max-width(sm) {
+      flex-wrap: wrap;
+
+      .card-image {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .image {
+    width: 256px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
