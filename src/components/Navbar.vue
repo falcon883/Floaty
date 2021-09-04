@@ -6,7 +6,10 @@
     v-if="!$route.meta.hideNavbar"
   >
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">
+      <router-link
+        class="navbar-item"
+        to="/"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="150"
@@ -29,7 +32,7 @@
             fill="#fff"
           ></path>
         </svg>
-      </a>
+      </router-link>
 
       <a
         role="button"
