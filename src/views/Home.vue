@@ -68,6 +68,7 @@
                 ref="inspect_link"
                 placeholder="Enter Inspect Link"
                 autocomplete="off"
+                value="steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M3385006551654098834A23213872953D14035082054113612009"
                 required
               />
             </div>
@@ -263,7 +264,7 @@ export default {
       if (this.validateInspectLink(link)) {
         this.loading = true;
         axios
-          .get(`https://api.csgofloat.com?url=${link}`, { crossdomain: true })
+          .get(`https://api.csgofloat.com?url=${link}`)
           .then((response) => {
             this.loading = false;
             this.skinData = response.data.iteminfo;
