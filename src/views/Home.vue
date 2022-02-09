@@ -264,7 +264,7 @@ export default {
       if (this.validateInspectLink(link)) {
         this.loading = true;
         axios
-          .get(`https://api.csgofloat.com?url=${link}/`)
+          .get(`https://api.csgofloat.com?url=${link}`)
           .then((response) => {
             this.loading = false;
             this.skinData = response.data.iteminfo;
