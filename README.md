@@ -1,4 +1,5 @@
-# Floaty
+
+# [Floaty](https://falcon883.github.io/Floaty/)
 
 CS:GO skin float checker
 
