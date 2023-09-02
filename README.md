@@ -1,7 +1,7 @@
 
 # [Floaty](https://falcon883.github.io/Floaty/)
 
-CS:GO skin float checker
+CSGO Weapon Skin Float Checker. Explore exact float values and paint seed details for CSGO items with ease through this minimalistic and visually appealing user interface. An open-source resource for the CSGO community.
 
 ![Dashboard](https://github.com/falcon883/Floaty/blob/main/screenshots/ss1.png)
 
