@@ -1,13 +1,6 @@
 <template>
   <div
-    class="
-      page-not-found
-      is-flex
-      is-flex-direction-column
-      is-justify-content-center
-      is-align-items-center
-      is-too-dark
-    "
+    class="page-not-found is-flex is-flex-direction-column is-justify-content-center is-align-items-center is-too-dark"
   >
     <img src="../assets/static/csgo-char.png" class="image-404" alt="" />
     <h1 class="is-size-3 is-text-white">404</h1>

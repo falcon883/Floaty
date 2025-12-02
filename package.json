@@ -1,34 +1,62 @@
 {
   "name": "floaty",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
+  "description": "CS:GO Weapon Skin Float Checker - Check exact float values and paint seed details",
+  "author": "falcon883",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "sh deploy.sh"
+    "deploy": "sh deploy.sh",
+    "test:unit": "vue-cli-service test:unit",
+    "analyze": "vue-cli-service build --report"
   },
   "dependencies": {
     "@creativebulma/bulma-tooltip": "^1.2.0",
-    "axios": "^0.21.1",
-    "bulma": "^0.9.3",
-    "core-js": "^3.6.5",
-    "vue": "^3.2.2",
-    "vue-router": "^4.0.0-0"
+    "axios": "^1.6.0",
+    "bulma": "^0.9.4",
+    "core-js": "^3.33.0",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.2.2",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-vue": "^7.16.0",
-    "prettier": "^2.2.1",
-    "sass": "^1.26.5",
-    "sass-loader": "^8.0.2"
-  }
+    "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-plugin-eslint": "~5.0.8",
+    "@vue/cli-plugin-router": "~5.0.8",
+    "@vue/cli-plugin-unit-jest": "~5.0.8",
+    "@vue/cli-service": "~5.0.8",
+    "@vue/compiler-sfc": "^3.3.8",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/test-utils": "^2.4.1",
+    "eslint": "^8.54.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-vue": "^9.18.1",
+    "prettier": "^3.1.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "keywords": [
+    "csgo",
+    "cs:go",
+    "float",
+    "checker",
+    "skins",
+    "weapon",
+    "steam",
+    "gaming"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/falcon883/Floaty.git"
+  },
+  "bugs": {
+    "url": "https://github.com/falcon883/Floaty/issues"
+  },
+  "homepage": "https://falcon883.github.io/Floaty/"
 }

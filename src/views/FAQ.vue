@@ -1,14 +1,7 @@
 <template>
   <div class="faq">
     <div
-      class="
-        hero
-        is-fullheight-with-navbar
-        is-justify-content-flex-start
-        is-too-dark
-        is-text-white
-        p-6
-      "
+      class="hero is-fullheight-with-navbar is-justify-content-flex-start is-too-dark is-text-white p-6"
     >
       <h1 class="title is-text-white mb-5">Frequently Asked Questions</h1>
       <div class="ques">
